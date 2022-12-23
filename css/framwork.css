@@ -35,6 +35,9 @@
 /* End box */
 
 /* Start padding + margin */
+.p-5 {
+  padding: 5px;
+}
 .p-10 {
   padding: 10px;
 }
@@ -53,6 +56,9 @@
 .pt-20 {
   padding-top: 20px;
 }
+.pr-5 {
+  padding-right: 5px;
+}
 .pr-10 {
   padding-right: 10px;
 }
@@ -64,6 +70,9 @@
 }
 .pb-20 {
   padding-bottom: 20px;
+}
+.pl-5 {
+  padding-left: 5px;
 }
 .pl-10 {
   padding-left: 10px;
@@ -93,11 +102,17 @@
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
 .ml-10 {
   margin-left: 10px;
+}
+.ml-auto {
+  margin-right: auto;
 }
 /* End padding + margin */
 /* Start color */
@@ -182,6 +197,12 @@
 .b-none {
   border: none;
 }
+.border-ccc {
+  border: 1px solid #ccc;
+}
+.border-r-ccc {
+  border-right: 1px solid #ccc;
+}
 .rad-6 {
   border-radius: 6px;
 }
@@ -196,8 +217,16 @@
 .w-fit {
   width: fit-content;
 }
+.h-full {
+  height: 100%;
+}
 /* End width */
+/* BUTTON */
+.c-pointer {
+  cursor: pointer;
+}
 
+/* End button */
 /*Start component */
 .center-flex {
   display: flex;
