@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/framwork.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="p-relative txt-c mt-0">IMANE</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="index.html"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10"
+              href="profilehtml"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="courses.html"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="friends.html"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="files.html"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10"
+              href="plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input
+              class="p-10"
+              type="search"
+              name=""
+              id=""
+              placeholder="Type a keyword"
+            />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="images/avatar.png" alt="" />
+          </div>
+        </div>
+        <!-- End head -->
+        <h1 class="p-relative">Profile</h1>
+        <div class="profile-page m-20">
+          <!-- PROFILE AVATAR -->
+          <div class="profile-overview bg-white rad-10 d-flex align-center">
+            <div class="overview-left txt-c p-20">
+              <img src="images/avatar.png" alt="avatar" />
+              <h2 class="mb-10">IMANE</h2>
+              <p class="c-grey fs-14 mb-10">Level 20</p>
+              <div class="profile-level p-relative rad-10 bg-eee">
+                <span style="width: 70%" class="bg-green rad-10"></span>
+              </div>
+              <div class="profile-stars mb-10 mt-10">
+                <i class="fa-solid fa-star c-orange"></i>
+                <i class="fa-solid fa-star c-orange"></i>
+                <i class="fa-solid fa-star c-orange"></i>
+                <i class="fa-solid fa-star c-orange"></i>
+                <i class="fa-solid fa-star c-orange"></i>
+              </div>
+              <p class="c-grey fs-14">550 Rating</p>
+            </div>
+            <div class="overview-right w-full">
+              <div class="overview-box border-b-eee p-20 txt-c-mobile">
+                <h3 class="c-grey fs-18 fw-normal mb-10">
+                  General information
+                </h3>
+                <div class="info-box d-flex gap-40 mb-10">
+                  <div>
+                    <span class="c-grey fs-18">Full Name:</span>
+                    <span class="fs-18">Imane</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Gender:</span>
+                    <span class="fs-18">Femal</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Country:</span>
+                    <span class="fs-18">Morocco</span>
+                  </div>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+              <div class="overview-box border-b-eee p-20 txt-c-mobile">
+                <h3 class="c-grey fs-18 fw-normal mb-10">
+                  Personal information
+                </h3>
+                <div class="info-box d-flex gap-40 mb-10">
+                  <div>
+                    <span class="c-grey fs-18">Email:</span>
+                    <span class="fs-18">contact@imane.com</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Phone:</span>
+                    <span class="fs-18">034-784-534</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Date of birth:</span>
+                    <span class="fs-18">23/08/93</span>
+                  </div>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+              <div class="overview-box border-b-eee p-20 txt-c-mobile">
+                <h3 class="c-grey fs-18 fw-normal mb-10">Job information</h3>
+                <div class="info-box d-flex gap-40 mb-10">
+                  <div>
+                    <span class="c-grey fs-18">Title:</span>
+                    <span class="fs-18">Web developer</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Programming Language:</span>
+                    <span class="fs-18">Javascript</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Yars of experience:</span>
+                    <span class="fs-18">4+</span>
+                  </div>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+              <div class="overview-box p-20 txt-c-mobile">
+                <h3 class="c-grey fs-18 fw-normal mb-10">
+                  Billing information
+                </h3>
+                <div class="info-box d-flex gap-40 mb-10">
+                  <div>
+                    <span class="c-grey fs-18">Payment Method:</span>
+                    <span class="fs-18">Paypal</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">Email:</span>
+                    <span class="fs-18">email@imane.com</span>
+                  </div>
+                  <div>
+                    <span class="c-grey fs-18">subscription:</span>
+                    <span class="fs-18">Monthly</span>
+                  </div>
+                </div>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILLS & ACTIVITIES -->
+          <div class="skills-activities mt-20 d-flex">   
+          <div class="my-skills p-20 bg-white rad-10 mr-10">
+             <h2 class="mt-0 mb-10">My skills</h2>
+            <p class="mb-20 fs-15 c-grey">
+              Complete skills list
+            </p>
+            <ul class="skills-list ">
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">HTML</li>
+                        <li class="btn-shape bg-eee">PugJs</li>
+                        <li class="btn-shape bg-eee">HAML</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">CSS</li>
+                        <li class="btn-shape bg-eee">SASS</li>
+                        <li class="btn-shape bg-eee">STYLUS</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">Javascript</li>
+                        <li class="btn-shape bg-eee">TypeScript</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">Vuejs</li>
+                        <li class="btn-shape bg-eee">Reactjs</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">Jest</li>
+                        <li class="btn-shape bg-eee">Jasmine</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 border-b-eee">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">PHP</li>
+                        <li class="btn-shape bg-eee">LARAVEL</li>
+                    </ul>
+                </li>
+                <li class="pt-20 pb-20 ">
+                    <ul class="d-flex gap-20  ">
+                        <li class="btn-shape bg-eee">Python</li>
+                        <li class="btn-shape bg-eee">Django</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+          <div class="my-activities p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Latest Activities</h2>
+            <p class="mb-20 fs-15 c-grey">
+              Latest activities done by the user
+            </p>
+            <ul class="activities-list txt-c-mobile">
+                <li class="d-flex align-center gap-20 border-b-eee pb-20 pt-20">
+                    <img class="activities-img rad-half bg-eee" src="images/store.png" alt="">
+                    <div class="activities-info" >
+                        <span class="fs-18">Store</span>
+                        <p class="c-grey fs-18">Bought the mastering python course</p>
+                    </div>
+                    <div class="activities-date" >
+                        <span class="fs-18">23:10</span>
+                        <p class="c-grey fs-18">Yesterday</p>
+                    </div>
+                </li>
+                <li class="d-flex align-center gap-20 border-b-eee pb-20 pt-20">
+                    <img class="activities-img rad-half" src="images/academy.png" alt="">
+                    <div class="activities-info" >
+                        <span class="fs-18">Academy</span>
+                        <p class="c-grey fs-18">Got the PHP Certificate</p>
+                    </div>
+                    <div class="activities-date" >
+                        <span class="fs-18">18:10</span>
+                        <p class="c-grey fs-18">Yesterday</p>
+                    </div>
+                </li>
+                <li class="d-flex align-center gap-20 border-b-eee pb-20 pt-20">
+                    <img class="activities-img rad-half " src="images/badge.png" alt="">
+                    <div class="activities-info" >
+                        <span class="fs-18">Store</span>
+                        <p class="c-grey fs-18">Bought the mastering python course</p>
+                    </div>
+                    <div class="activities-date" >
+                        <span class="fs-18">18:10</span>
+                        <p class="c-grey fs-18">Yesterday</p>
+                    </div>
+                </li>
+                <li class="d-flex align-center gap-20 pb-20 pt-20 ">
+                    <img class="activities-img rad-half " src="images/fix.png" alt="">
+                    <div class="activities-info" >
+                        <span class="fs-18">Store</span>
+                        <p class="c-grey fs-18">Bought the mastering python course</p>
+                    </div>
+                    <div class="activities-date" >
+                        <span class="fs-18">18:10</span>
+                        <p class="c-grey fs-18">Yesterday</p>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

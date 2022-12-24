@@ -43,6 +43,21 @@ ul {
   cursor: no-drop;
   background-color: #ccc;
 }
+/* .avatar {
+  width: 50px;
+  height: 50px;
+} */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: rgb(255, 255, 255, 0.8);
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+.avatar:not(:first-of-type) {
+  margin-left: -15px;
+}
 .page {
   background-color: #f1f5f9;
   min-height: 100vh;
@@ -591,17 +606,7 @@ ul {
 .projects table tr:hover td {
   background-color: rgb(251, 251, 251);
 }
-.projects table img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 2px;
-  background-color: rgb(255, 255, 255, 0.8);
-  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-}
-.projects table img:not(:first-of-type) {
-  margin-left: -15px;
-}
+
 /* End priojects table */
 
 /* START SETTINGS */
@@ -847,6 +852,138 @@ ul {
   color: var(--blue-color);
 }
 /* END BUCKP MANAGER */
+
+/* PROFILE PAGE */
+/* Profile overview */
+
+@media (max-width: 767px) {
+  .profile-overview {
+    flex-direction: column;
+  }
+}
+
+.overview-left {
+  width: 300px;
+  min-height: 400px;
+}
+@media (min-width: 768px) {
+  .overview-left {
+    border-right: 1px solid #eee;
+  }
+}
+.overview-left img {
+  width: 120px;
+  height: 120px;
+}
+.profile-level {
+  width: 70%;
+  height: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.profile-level span {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+.overview-box {
+  transition: 0.3s;
+}
+.overview-box:hover {
+  background-color: rgb(241, 239, 239, 0.5);
+}
+.info-box {
+  margin-top: 20px;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .info-box {
+    flex-direction: column;
+  }
+  .overview-box label {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
+
+/* End profile overview */
+
+/* SKILLS AND ACTIVITIES */
+
+.skills-activities {
+  /* flex-wrap: wrap; */
+}
+
+.my-skills {
+  flex: 1;
+}
+
+.my-activities {
+  flex: 2;
+}
+.activities-img {
+  width: 80px;
+  height: 80px;
+}
+
+.activities-info {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .skills-activities {
+    flex-direction: column;
+  }
+  .my-skills,
+  .my-activities {
+    margin: 0;
+  }
+  .my-skills {
+    margin-bottom: 10px;
+  }
+  .skills-list ul {
+    justify-content: center;
+  }
+  .activities-list li {
+    flex-direction: column;
+  }
+}
+/* END SKILLS AND ACTIVITIES */
+
+/* START PROJECTS PAGE */
+.projects-date {
+  right: 10px;
+  top: 10px;
+}
+
+.budget-level {
+  width: 250px;
+  height: 8px;
+}
+.budget-level span {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.projects-skills {
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .projects-skills {
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+  }
+}
+/* END PROJECTS PAGE */
+
 /* Animations */
 
 @keyframes progress {
