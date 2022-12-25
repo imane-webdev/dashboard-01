@@ -110,7 +110,7 @@
             <span class="notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
-            <img src="images/avatar.png" alt="" />
+            <img class="avatar ml-15" src="images/avatar.png" alt="" />
           </div>
         </div>
         <!-- End head -->
@@ -128,8 +128,10 @@
                 alt=""
               />
             </div>
-            <img class="avatar" src="images/avatar.png" alt="" />
-            <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+            <img class="avatar border-half" src="images/avatar.png" alt="" />
+            <div
+              class="body txt-c between-flex p-20 mt-20 mb-20 block-mobile border-b-eee border-t-eee"
+            >
               <div>
                 Imane
                 <span class="d-block c-grey fs-14 mt-10"> Developer</span>
@@ -179,12 +181,12 @@
               <div class="icon center-flex">
                 <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
               </div>
-              <div class="details">
+              <div class="details flex-1">
                 <span class="fs-14 c-grey">Money</span>
                 <span class="d-block mt-5 mb-10 fw-bold">$40.000</span>
                 <div class="progress p-relative">
-                  <span class="bg-blue blue" style="width: 40%">
-                    <span class="bg-blue">40%</span></span
+                  <span class="bg-blue blue p-absolute" style="width: 40%">
+                    <span class="bg-blue p-absolute">40%</span></span
                   >
                 </div>
               </div>
@@ -193,12 +195,12 @@
               <div class="icon center-flex">
                 <i class="fa-solid fa-code fa-lg c-orange"></i>
               </div>
-              <div class="details">
+              <div class="details flex-1">
                 <span class="fs-14 c-grey">Projects</span>
                 <span class="d-block mt-5 mb-10 fw-bold">24</span>
                 <div class="progress p-relative">
-                  <span class="bg-orange orange" style="width: 55%">
-                    <span class="bg-orange">55%</span></span
+                  <span class="bg-orange orange p-absolute" style="width: 55%">
+                    <span class="bg-orange p-absolute">55%</span></span
                   >
                 </div>
               </div>
@@ -207,12 +209,12 @@
               <div class="icon center-flex">
                 <i class="fa-solid fa-user fa-lg c-green"></i>
               </div>
-              <div class="details">
+              <div class="details flex-1">
                 <span class="fs-14 c-grey">Team</span>
                 <span class="d-block mt-5 mb-10 fw-bold">15</span>
                 <div class="progress p-relative">
-                  <span class="bg-green green" style="width: 25%">
-                    <span class="bg-green">25%</span></span
+                  <span class="bg-green green p-absolute" style="width: 25%">
+                    <span class="bg-green p-absolute">25%</span></span
                   >
                 </div>
               </div>
@@ -254,25 +256,25 @@
           <!-- Start latest news -->
           <div class="latest-news p-20 bg-white rad-10 txt-c-mobile">
             <h2 class="mt-0 mb-10">Latest News</h2>
-            <div class="news-row d-flex align-center">
+            <div class="news-row d-flex align-center mb-20 pb-20 border-b-eee">
               <img src="images/news.png" alt="news" />
-              <div class="info">
+              <div class="info flex-1">
                 <h3 class="fs-14">Created Sass section</h3>
                 <p class="m-0 c-grey fs-14">New Sass examples & tutorials</p>
               </div>
               <span class="btn-shape bg-eee fs-12 p-10 label">3 days ago</span>
             </div>
-            <div class="news-row d-flex align-center">
+            <div class="news-row d-flex align-center mb-20 pb-20 border-b-eee">
               <img src="images/news.png" alt="news" />
-              <div class="info">
+              <div class="info flex-1">
                 <h3 class="fs-14">Changed the design</h3>
                 <p class="m-0 c-grey fs-14">A Brand new website design</p>
               </div>
               <span class="btn-shape bg-eee fs-12 p-10 label">5 days ago</span>
             </div>
-            <div class="news-row d-flex align-center">
+            <div class="news-row d-flex align-center mb-20 pb-20 border-b-eee">
               <img src="images/news.png" alt="news" />
-              <div class="info">
+              <div class="info flex-1">
                 <h3 class="fs-14">Team increased</h3>
                 <p class="m-0 c-grey fs-14">3 developers Joined the team</p>
               </div>
@@ -280,7 +282,7 @@
             </div>
             <div class="news-row d-flex align-center">
               <img src="images/news.png" alt="news" />
-              <div class="info">
+              <div class="info flex-1">
                 <h3 class="fs-14">Added Payment Gatway</h3>
                 <p class="m-0 c-grey fs-14">Many new payment gateways Added</p>
               </div>
@@ -291,8 +293,8 @@
           <!-- Start Tasks -->
           <div class="tasks p-20 bg-white rad-10">
             <h2 class="mt-0 mb-10">Latest Tasks</h2>
-            <div class="task-row d-flex align-center">
-              <div class="task-desc">
+            <div class="task-row d-flex align-center mb-15 pb-15 border-b-eee">
+              <div class="task-desc flex-1">
                 <h3 class="fs-14 mb-5">Record One New video</h3>
                 <p class="c-grey fs-14 mt-5">
                   Record Python Create Exe project
@@ -300,8 +302,8 @@
               </div>
               <i class="fa-solid fa-trash-can delete-task"></i>
             </div>
-            <div class="task-row d-flex align-center">
-              <div class="task-desc">
+            <div class="task-row d-flex align-center mb-15 pb-15 border-b-eee">
+              <div class="task-desc flex-1">
                 <h3 class="fs-14 mb-5">Write Article</h3>
                 <p class="c-grey fs-14 mt-5">
                   Write low level vs high level languages
@@ -309,8 +311,8 @@
               </div>
               <i class="fa-solid fa-trash-can delete-task"></i>
             </div>
-            <div class="task-row d-flex align-center">
-              <div class="task-desc">
+            <div class="task-row d-flex align-center mb-15 pb-15 border-b-eee">
+              <div class="task-desc flex-1">
                 <h3 class="fs-14 mb-5">Finish project</h3>
                 <p class="c-grey fs-14 mt-5">
                   publish academy programming project
@@ -318,8 +320,10 @@
               </div>
               <i class="fa-solid fa-trash-can delete-task"></i>
             </div>
-            <div class="task-row d-flex align-center task-done">
-              <div class="task-desc">
+            <div
+              class="task-row d-flex align-center mb-15 pb-15 border-b-eee task-done"
+            >
+              <div class="task-desc flex-1">
                 <h3 class="fs-14 mb-5">Attend the meeting</h3>
                 <p class="c-grey fs-14 mt-5">
                   Attend the project business analysis meeting
@@ -328,7 +332,7 @@
               <i class="fa-solid fa-trash-can delete-task"></i>
             </div>
             <div class="task-row d-flex align-center">
-              <div class="task-desc">
+              <div class="task-desc flex-1">
                 <h3 class="fs-14 mb-5">Finish lesson</h3>
                 <p class="c-grey fs-14 mt-5">Finish teaching flexbox</p>
               </div>
@@ -372,31 +376,31 @@
           <!-- Start latest uploads -->
           <div class="upload p-20 bg-white rad-10">
             <h2 class="mt-0 mb-10">Latest Uploads</h2>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10 pb-10 border-b-eee">
               <img src="images/pdf.png" alt="pdf icon" />
-              <div class="upload-info">
+              <div class="upload-info flex-1">
                 <h3 class="fs-14">my-file.pdf</h3>
                 <p class="fs-14 c-grey">Imane</p>
               </div>
               <span class="btn-shape bg-eee">2.9mb</span>
             </div>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10 pb-10 border-b-eee">
               <img src="images/avi.png" alt="pdf icon" />
-              <div class="upload-info">
+              <div class="upload-info flex-1">
                 <h3 class="fs-14">my-video-file.avi</h3>
                 <p class="fs-14 c-grey">Admin</p>
               </div>
               <span class="btn-shape bg-eee">4.6mb</span>
             </div>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10 pb-10 border-b-eee">
               <img src="images/psd.png" alt="pdf icon" />
-              <div class="upload-info">
+              <div class="upload-info flex-1">
                 <h3 class="fs-14">my-psd-file.psd</h3>
                 <p class="fs-14 c-grey">admin</p>
               </div>
               <span class="btn-shape bg-eee">2.9mb</span>
             </div>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10 pb-10 border-b-eee">
               <img src="images/zip.png" alt="pdf icon" />
               <div class="upload-info">
                 <h3 class="fs-14">my-zip-file.zip</h3>
@@ -404,17 +408,17 @@
               </div>
               <span class="btn-shape bg-eee">2.9mb</span>
             </div>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10 pb-10 border-b-eee">
               <img src="images/dll.png" alt="pdf icon" />
-              <div class="upload-info">
+              <div class="upload-info flex-1">
                 <h3 class="fs-14">my-dll-file.dll</h3>
                 <p class="fs-14 c-grey">Imane</p>
               </div>
               <span class="btn-shape bg-eee">2.6mb</span>
             </div>
-            <div class="upload-row between-flex">
+            <div class="upload-row between-flex pt-10">
               <img src="images/eps.png" alt="pdf icon" />
-              <div class="upload-info">
+              <div class="upload-info flex-1">
                 <h3 class="fs-14">my-eps-file.eps</h3>
                 <p class="fs-14 c-grey">admin</p>
               </div>
@@ -458,7 +462,7 @@
               </div>
             </div>
             <img
-              class="progress-img hide-mobile"
+              class="progress-img p-absolute hide-mobile"
               src="images/progress-flower.png"
               alt=""
             />
@@ -503,7 +507,9 @@
                 <p class="c-grey fs-14 mt-5">About 3 Hours ago</p>
               </div>
             </div>
-            <p class="post-p fs-15 pt-20 pb-20 mt-20 lh-2">
+            <p
+              class="post-p fs-15 pt-20 pb-20 mt-20 lh-2 border-b-eee border-t-eee"
+            >
               You can fool of the people some of the time, and some of the
               people all the time, but you can't fool all of the people all the
               time
@@ -532,7 +538,7 @@
                   <i class="fa-brands fa-twitter c-white fa-2x"></i>
                 </div>
                 <div
-                  class="social-follow d-flex space-between align-center ml-10 mr-10"
+                  class="social-follow d-flex flex-1 space-between align-center ml-10 mr-10"
                 >
                   <span class="c-blue">90K Followers</span>
                   <span class="btn-shape social-btn c-white">Follow</span>
@@ -546,7 +552,7 @@
                   <i class="fa-brands fa-facebook c-white fa-2x"></i>
                 </div>
                 <div
-                  class="social-follow d-flex space-between align-center ml-10 mr-10"
+                  class="social-follow d-flex flex-1 space-between align-center ml-10 mr-10"
                 >
                   <span class="c-blue">2M likes</span>
                   <span class="btn-shape social-btn c-white">Like</span>
@@ -560,7 +566,7 @@
                   <i class="fa-brands fa-youtube c-white fa-2x"></i>
                 </div>
                 <div
-                  class="social-follow d-flex space-between align-center ml-10 mr-10"
+                  class="social-follow d-flex flex-1 space-between align-center ml-10 mr-10"
                 >
                   <span class="c-red">1M Subs</span>
                   <span class="btn-shape social-btn c-white">Subscribe</span>
@@ -574,7 +580,7 @@
                   <i class="fa-brands fa-linkedin c-white fa-2x"></i>
                 </div>
                 <div
-                  class="social-follow d-flex space-between align-center ml-10 mr-10"
+                  class="social-follow d-flex flex-1 space-between align-center ml-10 mr-10"
                 >
                   <span class="c-blue">70K Followers</span>
                   <span class="btn-shape social-btn c-white">Follow</span>

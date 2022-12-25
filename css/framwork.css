@@ -14,6 +14,17 @@
 .f-wrap {
   flex-wrap: wrap;
 }
+.flex-1 {
+  flex: 1;
+}
+.flex-column {
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .flex-mobile-column {
+    flex-direction: column;
+  }
+}
 .d-grid {
   display: grid;
 }
@@ -137,6 +148,9 @@
 }
 .ml-0 {
   margin-left: 0;
+}
+.ml-15 {
+  margin-left: 15px;
 }
 .ml-10 {
   margin-left: 10px;
