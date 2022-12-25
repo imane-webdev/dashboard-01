@@ -47,6 +47,42 @@ ul {
   width: 50px;
   height: 50px;
 } */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.wrapper-200 {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .wrapper-200 {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+.wrapper-300 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .wrapper-300 {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .avatar {
   width: 32px;
   height: 32px;
@@ -57,6 +93,11 @@ ul {
 }
 .avatar:not(:first-of-type) {
   margin-left: -15px;
+}
+
+.avatar-m {
+  width: 100px;
+  height: 100px;
 }
 .page {
   background-color: #f1f5f9;
@@ -193,19 +234,6 @@ ul {
 .page h1::after {
   background-color: black;
   width: 40px;
-}
-.wrapper {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-@media (max-width: 767px) {
-  .wrapper {
-    grid-template-columns: minmax(200px, 1fr);
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
 
 /* End content */
@@ -983,7 +1011,162 @@ ul {
   }
 }
 /* END PROJECTS PAGE */
+/* START COURSES PAGE */
+.course-avatar {
+  width: 60px;
+  height: 60px;
+  left: 20px;
+  top: 20px;
+}
+.course-img-box {
+  width: 100%;
+  height: 250px;
+}
+.course-img {
+  border-radius: 6px 6px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+.course-btn {
+  z-index: 2;
+}
+.course-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #eee;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.course-btn button {
+  cursor: pointer;
+}
+/* END COURSES PAGE */
+
+/* Friends page */
+.firends-icons i {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 300ms;
+}
+.firends-icons i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+/* End friends page */
+
+/*START FILES PAGE */
+.files-page {
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .files-page {
+    align-items: normal;
+    flex-direction: column-reverse;
+  }
+}
+
+.files-statistics {
+  min-width: 300px;
+}
+.files-stats-rwo {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.files-name {
+  flex: 1;
+}
+.files-upload button {
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+  padding-left: 30px;
+  transition: background-color 300ms;
+}
+.files-upload button:hover {
+  background-color: var(--blue-alt-color);
+}
+.upload-icon {
+  font-size: 18px;
+  /* font-weight: 400; */
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.files-upload button:hover .upload-icon {
+  animation: 1s linear 0s infinite upload;
+}
+.files-wrapper {
+  flex: 1;
+}
+
+.dwonload-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: var(--grey-color);
+}
+
+.files-img {
+  display: block;
+  margin-inline: auto;
+  width: 100px;
+}
+/* END FILES PAGE */
+/* START PLANS */
+.plan-head {
+  border: 3px solid white;
+  position: relative;
+}
+.plan-head::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  left: -6px;
+  top: -6px;
+  border: 3px solid;
+}
+.plan-head.green-head::before {
+  border-color: var(--green-color);
+}
+.plan-head.blue-head::before {
+  border-color: var(--blue-color);
+}
+.plan-head.orange-head::before {
+  border-color: var(--orange-color);
+}
+.plan-price {
+  font-size: 30px;
+}
+.plan-price::before {
+  content: "$";
+  position: absolute;
+  left: -20px;
+  top: -5px;
+}
+.icon-info {
+  font-size: 10px;
+  background-color: var(--grey-color);
+  padding: 6px 10px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.plans-join {
+  cursor: pointer;
+}
+/* END PLANS */
 /* Animations */
 
 @keyframes progress {
@@ -997,5 +1180,22 @@ ul {
   }
   100% {
     opacity: 0.75;
+  }
+}
+
+@keyframes upload {
+  0%,
+  50% {
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  25%,
+  75% {
+    top: 30%;
+    transform: translateY(-50%);
+  }
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
